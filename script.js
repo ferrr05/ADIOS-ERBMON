@@ -1,11 +1,8 @@
-var nombre = prompt("¿Cual es tu nombre:");
+let nombre = prompt("¿Cuál es tu nombre?");
+let nombreReverso = "";
 
-nombre = nombre.toLowerCase().replace(/\s+/g, '');
-
-var nombreAlReves = '';
-
-for (var i = nombre.length - 1; i >= 0; i--) {
-    nombreAlReves += nombre[i];
+for (let i = nombre.length - 1; i >= 0; i--) {
+  nombreReverso += nombre[i];
 }
 
-alert("¡Adiós " + nombreAlReves + "!");
+console.log("¡Adiós " + nombreReverso + "!");
